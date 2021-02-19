@@ -10,10 +10,10 @@
     }
 
 .post__header{
-    margin: -2.5rem -2.5rem 2.5rem;
-
-    &--video{
-        margin: 0 0 2.5rem;
+    margin: 0 0 2.5rem;
+    
+    &--preview{
+        margin: -2.5rem -2.5rem 2.5rem;
     }
     
 }
@@ -38,14 +38,80 @@
             text-decoration: underline ;
         }
     }
+
+    &--mb0{
+        margin: .4rem 0;
+    }
 }
 
-.post__text{
+.post__subtitle{
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: $white;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+.post__description{
     color: $text;
     font-size: 1.4rem;
     line-height: 2.1rem;
-    
+}
 
+.post__text{
+    padding-bottom: 1rem;
+    color: $white;
+    font-size: 1.4rem;
+
+    border-bottom: 1px solid #1c1c1c;
+
+    &--mt3{
+        margin-top: 3rem;
+    }
+
+    h2,h3,h4,h5,h6{
+        margin-bottom: 2rem;
+        font-weight: 700;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.25rem;
+    }
+    h4{
+        font-size: 1.15rem;
+    }
+    h5,h6{
+        font-size: 1rem;
+    }
+    ul,ol{
+    margin-bottom: 2rem;
+  
+    }
+    ol{
+        list-style: decimal;
+        list-style-position: inside;
+    }
+    table{
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    p{
+        margin-bottom: 2rem;
+    }
+
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+
+    }
+    a{
+        color: $blue;
+       
+    }
+    
 }
 .post__content{
     margin-bottom: 2rem;
@@ -61,15 +127,8 @@
     display: flex;
     color: #828282;
     line-height: 1.2rem;
+    font-size: 12px;
 
-    a{
-        color: inherit;
-        text-decoration: none;
-
-        &:hover{
-            text-decoration: underline;
-        }
-    }
 }
 
 .post__data__item{
@@ -90,12 +149,31 @@
 .post__read{
     font-size: 1.4rem;
     color: #107EFF;
-    text-decoration: none;
    
+}
 
-    
+.post__actions{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color:$white;
 
-    &:hover{
-        text-decoration: underline;
+    a{
+
+        opacity: 0.6;
+        transition: opacity .2s linear;
+
+        &:hover{
+            opacity: 1;
+        }
     }
 }
+
+.post__actions-icon{
+    margin-left: .5rem;
+    margin-top: -.1rem;
+}
+
+
+

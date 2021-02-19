@@ -14,6 +14,16 @@ body {
     color: $white;
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+
 *,
 *::before,
 *::after{
@@ -37,6 +47,9 @@ body {
 @import "blocks/post.scss";
 @import "blocks/embed.scss";
 @import "blocks/pagination.scss";
+@import "blocks/related.scss";
+@import "blocks/comments.scss";
+@import "blocks/form.scss";
 
 
 
