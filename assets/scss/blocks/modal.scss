@@ -19,11 +19,15 @@
 .modal__content{
     width: 100%;
     max-width: 50rem;
-    padding: 8rem 8rem 2.5rem;
+    padding: 8rem;
     position: relative;
 
     background-color: $primary;
     border-radius: .5rem;
+
+    &--contact{
+        padding-bottom: 2.5rem;
+    }
 }
 
 .modal__close{
@@ -61,9 +65,11 @@
     a{
         color: inherit;
         text-decoration: underline;
+
+        &:hover{
+            text-decoration: none;
+        }
     }
 
-    &:hover{
-        text-decoration: none;
-    }
+   
 }
