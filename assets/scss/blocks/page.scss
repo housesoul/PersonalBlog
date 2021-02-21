@@ -1,5 +1,9 @@
 .page{
     overflow: hidden; //prevents horizontal scroll from content going out of page
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .page__title{
@@ -7,4 +11,8 @@
     
     font-size: 2.1rem;
     color: $white;
+
+    &--center{
+        text-align: center;
+    }
 }
