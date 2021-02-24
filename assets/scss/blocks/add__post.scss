@@ -5,6 +5,10 @@
     rgba($black, .45);
     border-radius: .5rem;
     padding: 1.5rem 2rem;
+
+    @include breakpoint($mobile-bp){
+        padding: 1.5rem;
+    }
 }
 
 .add__post__form{
@@ -48,6 +52,12 @@
     &:hover{
         background-color: darken(#EBEBEB, 5%);
     }
+
+    @include breakpoint($mobile-bp){
+        width: 3.5rem;
+        height: 3.5rem;
+        background-size: 2rem;
+    }
 }
 
 .add__post__send{
@@ -65,6 +75,12 @@
     &:hover{
         background-color: darken($blue, 5%);
     }
+
+    @include breakpoint($mobile-bp){
+        width: 3.5rem;
+        height: 3.5rem;
+        // background-size: 1.5rem;
+    }
 }
 
 .add__post__form__actions{
@@ -72,4 +88,8 @@
     flex-shrink: 0;
     display: flex;
     justify-content: space-around;
+
+    @include breakpoint($mobile-bp){
+        width: 9rem;
+    }
 }

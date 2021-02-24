@@ -1,7 +1,11 @@
 .pagination{
     display: flex;
     justify-content: center;
-    padding-top: 7rem;
+    margin-top: 7rem;
+
+    @include breakpoint($mobile-bp){
+        margin-top: 5rem;
+    }
 
 }
 
