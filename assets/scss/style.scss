@@ -1,4 +1,5 @@
 @import "vars";
+@import "mixins";
 @import "vendor/reset.scss";
 
 
@@ -13,7 +14,8 @@ body {
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     color: $white;
 
-    &.no-scroll{
+    &.no-scroll,
+    &.show-sidebar{
         overflow: hidden;
     }
 }
@@ -37,6 +39,7 @@ a{
 // Blocks
 @import "blocks/page.scss";
 @import "blocks/header.scss";
+@import "blocks/burger.scss";
 @import "blocks/nav.scss";
 @import "blocks/subnav.scss";
 @import "blocks/search.scss";
