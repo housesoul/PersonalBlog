@@ -5,14 +5,14 @@ title: Home
 <!--.stories -->
 
 <div class="stories">
-    <div class="stories__item">
+    <div class="stories__item" data-modal="story-modal">
         <img class="stories__preview" src="assets/images/stories/stories_1.jpg" alt="">
         <div class="stories__title">
             Relaxing in nature</div>
         <time class="stories__date" datetime="2020-09-21 19:21">21.09.2020</time>
     </div>
 
-    <div class="stories__item">
+    <div class="stories__item" data-modal="story-modal">
         <img class="stories__preview" src="assets/images/stories/stories_2.jpg" alt="">
         <div class="stories__title">
 
@@ -20,7 +20,7 @@ title: Home
         <time class="stories__date" datetime="2020-09-21 19:21">15.09.2020</time>
     </div>
 
-    <div class="stories__item">
+    <div class="stories__item" data-modal="story-modal">
         <img class="stories__preview" src="assets/images/stories/stories_3.jpg" alt="">
         <div class="stories__title">
             Moved to a new apartment
@@ -28,7 +28,7 @@ title: Home
         <time class="stories__date" datetime="2020-09-21 19:21">11.09.2020</time>
     </div>
 
-    <div class="stories__item">
+    <div class="stories__item"data-modal="story-modal">
         <img class="stories__preview" src="assets/images/stories/stories_4.jpg" alt="">
         <div class="stories__title">
             Fall has come!
@@ -43,7 +43,7 @@ title: Home
 
 <div class="add__post">
     <form class="add__post__form" action="/" method="POST">
-        <textarea class="add__post__textarea" name="post__text" placeholder="Write something"></textarea>
+        <textarea class="add__post__textarea" name="post__text" placeholder="Write something" data-autoresize></textarea>
 
         <div class="add__post__form__actions">
             <label class="add__post__file" for="add-post-file">
