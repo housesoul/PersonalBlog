@@ -21,6 +21,8 @@
     img{
         display: block;
         margin-bottom: 1.5rem;
+        width: 15rem;
+        height: 15rem;
     }
 
     @include breakpoint($mobile-bp){
